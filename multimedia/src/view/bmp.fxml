@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="391.0" style="-fx-background-color: #2196f3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.bmpController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="325.0" prefWidth="415.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <JFXButton fx:id="choose_image" buttonType="RAISED" layoutX="14.0" layoutY="45.0" onAction="#choose" prefHeight="51.0" prefWidth="196.0" ripplerFill="#2196f3" style="-fx-background-color: #2196f3;" text="Choose Image and show size " />
+            <JFXButton fx:id="back" buttonType="RAISED" layoutX="241.0" layoutY="45.0" onAction="#back" prefHeight="51.0" prefWidth="108.0" ripplerFill="#2196f3" style="-fx-background-color: #2196f3;" text="&lt;&lt;" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

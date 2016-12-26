@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0"
+            prefWidth="531.0" style="-fx-background-color: #DBD3D8;" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+    <children>
+        <Pane fx:id="root" layoutX="14.0" layoutY="14.0" prefHeight="467.0" prefWidth="468.0"
+              style="-fx-background-color: #EFF1F3;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0"
+              AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+            <effect>
+                <DropShadow/>
+            </effect>
+            <children>
+                <JFXButton fx:id="Image_info" buttonType="RAISED" layoutX="71.0" layoutY="19.0" onAction="#Image_info"
+                           prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="Image Info" />
+                <JFXButton fx:id="LZW" buttonType="RAISED" layoutX="71.0" layoutY="408.0" onAction="#LZW_Action"
+                           prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white" text="LZW"/>
+                <JFXButton fx:id="three_shold" buttonType="RAISED" layoutX="71.0" layoutY="90.0"
+                           onAction="#threeSholdAction" prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white" text="Three Shold "/>
+                <JFXButton fx:id="other_ditheling" buttonType="RAISED" layoutX="71.0" layoutY="153.0"
+                           onAction="#other_ditheling_action" prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="Other ditheling"/>
+                <JFXButton fx:id="Dither_Dissolve" buttonType="RAISED" layoutX="71.0" layoutY="217.0"
+                           onAction="#DitherDissolve" prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="Dither Dissolve"/>
+                <JFXButton fx:id="Run_Length" buttonType="RAISED" layoutX="71.0" layoutY="285.0" onAction="#RunLength"
+                           prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="Run Length"/>
+                <JFXButton fx:id="Huffman" buttonType="RAISED" layoutX="71.0" layoutY="349.0" onAction="#Huffman_Action"
+                           prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="Huffman"/>
+                <JFXButton fx:id="Arithmetic_Coding" buttonType="RAISED" layoutX="313.0" layoutY="349.0"
+                           onAction="#ArithmeticCoding" prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="Arithmetic Coding"/>
+                <JFXButton fx:id="Shannon_Fano" buttonType="RAISED" layoutX="313.0" layoutY="285.0"
+                           onAction="#ShannonFano" prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="Shannon Fano"/>
+                <JFXButton fx:id="TRS_2D_object" buttonType="RAISED" layoutX="313.0" layoutY="217.0"
+                           onAction="#TRS2D_objectAction" prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="TRS 2D object"/>
+                <JFXButton fx:id="cross_dissolve" buttonType="RAISED" layoutX="313.0" layoutY="153.0"
+                           onAction="#CrossAction" prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="Cross Dissolve"/>
+                <JFXButton fx:id="folyed" buttonType="RAISED" layoutX="313.0" layoutY="90.0" onAction="#floyedAction"
+                           prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="floyed St"/>
+                <JFXButton fx:id="Exit" buttonType="RAISED" layoutX="313.0" layoutY="408.0" onAction="#Exit_Action"
+                           prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="Exit"/>
+                <JFXButton fx:id="alpha" buttonType="RAISED" layoutX="313.0" layoutY="19.0" onAction="#AlphaAction"
+                           prefHeight="42.0" prefWidth="160" ripplerFill="#2196f3"
+                           style="-fx-background-color: #2196f3; -fx-font-weight: bolder; -fx-text-fill: white;" text="Alpha Channel"/>
+            </children>
+        </Pane>
+    </children>
+    <effect>
+        <DropShadow/>
+    </effect>
+</AnchorPane>

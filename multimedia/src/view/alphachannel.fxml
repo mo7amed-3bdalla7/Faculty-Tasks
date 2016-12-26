@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="751.0" style="-fx-background-color: #2196f3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlphaChannel">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="570.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ImageView fx:id="image_view2" fitHeight="176.0" fitWidth="201.0" layoutX="237.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect></ImageView>
+            <ImageView fx:id="image_view1" fitHeight="176.0" fitWidth="209.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect></ImageView>
+            <ImageView fx:id="image_view3" fitHeight="184.0" fitWidth="256.0" layoutX="450.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect></ImageView>
+            <JFXButton fx:id="choose_image1" buttonType="RAISED" layoutX="36.0" layoutY="234.0" onAction="#chooseimage1" prefHeight="57.0" prefWidth="138.0" ripplerFill="#2196f3" style="-fx-background-color: #2196f3;" text="choose image1" />
+            <JFXButton fx:id="choose_image2" buttonType="RAISED" layoutX="228.0" layoutY="234.0" onAction="#chooseimage2" prefHeight="57.0" prefWidth="138.0" ripplerFill="#2196f3" style="-fx-background-color: #2196f3;" text="choose image2" />
+            <JFXButton fx:id="done" buttonType="RAISED" layoutX="401.0" layoutY="234.0" onAction="#doneAction" prefHeight="57.0" prefWidth="138.0" ripplerFill="#2196f3" style="-fx-background-color: #2196f3;" text="Done" />
+            <JFXButton fx:id="back" buttonType="RAISED" layoutX="562.0" layoutY="234.0" onAction="#back" prefHeight="57.0" prefWidth="138.0" ripplerFill="#2196f3" style="-fx-background-color: #2196f3;" text="&lt;&lt;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

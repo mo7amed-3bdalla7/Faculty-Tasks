@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2196f3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RLEcontroller">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="374.0" prefWidth="576.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fx:id="image_view" fitHeight="264.0" fitWidth="403.0" layoutX="79.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect></ImageView>
+            <JFXButton fx:id="choose_image" buttonType="RAISED" layoutX="28.0" layoutY="304.0" onAction="#choose" prefHeight="53.0" prefWidth="144.0" ripplerFill="#1296f3" style="-fx-background-color: #2196f3;" text="Choose Image" />
+            <JFXButton fx:id="rle" buttonType="RAISED" layoutX="214.0" layoutY="304.0" onAction="#RLE" prefHeight="53.0" prefWidth="144.0" ripplerFill="#1296f3" style="-fx-background-color: #2196f3;" text="RLE" />
+            <JFXButton fx:id="back" buttonType="RAISED" layoutX="414.0" layoutY="304.0" onAction="#back" prefHeight="53.0" prefWidth="144.0" ripplerFill="#1296f3" style="-fx-background-color: #2196f3;" text="&lt;&lt;" />
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

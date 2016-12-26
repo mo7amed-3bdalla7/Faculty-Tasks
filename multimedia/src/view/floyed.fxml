@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.floyedController">
+   <children>
+      <Pane fx:id="root" layoutX="14.0" layoutY="14.0" prefHeight="334.0" prefWidth="574.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <ImageView fx:id="image_view2" fitHeight="208.0" fitWidth="274.0" layoutX="300.0" layoutY="13.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="iamge_view1" fitHeight="208.0" fitWidth="274.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <JFXButton fx:id="choose_image" buttonType="RAISED" layoutX="39.0" layoutY="242.0" onAction="#choose_image" prefHeight="50.0" prefWidth="152.0" ripplerFill="#2196f3" style="-fx-background-color: #2196f3;" text="Choose Image">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="do_floyed" buttonType="RAISED" layoutX="224.0" layoutY="242.0" onAction="#do_floyed_action" prefHeight="50.0" prefWidth="152.0" ripplerFill="#2196f3" style="-fx-background-color: #2196f3;" text="DO">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="back" buttonType="RAISED" layoutX="406.0" layoutY="242.0" onAction="#back" prefHeight="50.0" prefWidth="152.0" ripplerFill="#2196f3" style="-fx-background-color: #2196f3;" text="&lt;&lt;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

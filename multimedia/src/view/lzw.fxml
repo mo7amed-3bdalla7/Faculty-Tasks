@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="188.0" prefWidth="366.0" style="-fx-background-color: #2196f3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LZWcontroller">
+   <children>
+      <Pane layoutX="9.0" layoutY="7.0" prefHeight="139.0" prefWidth="312.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <JFXTextField fx:id="edit_text" focusColor="#2196f3" labelFloat="true" layoutX="24.0" layoutY="37.0" maxWidth="282.0" minWidth="282.0" prefHeight="31.0" prefWidth="282.0" promptText="Enter Text" unFocusColor="#2196f3" />
+            <JFXButton fx:id="done" buttonType="RAISED" layoutX="41.0" layoutY="93.0" onAction="#Action" prefHeight="48.0" prefWidth="132.0" ripplerFill="#229df3" style="-fx-background-color: #2196f3;" text="LZW" />
+            <JFXButton fx:id="back" buttonType="RAISED" layoutX="200.0" layoutY="93.0" onAction="#back" prefHeight="48.0" prefWidth="119.0" ripplerFill="#229df3" style="-fx-background-color: #2196f3;" text="&lt;&lt;" />
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

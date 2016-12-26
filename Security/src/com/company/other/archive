@@ -1,0 +1,118 @@
+
+
+    public static long recfact(long start, long n) {
+        long i;
+        if (n <= 16) {
+            long r = (start);
+            for (i = start + 1; i < start + n; i++) r *= i;
+            return r;
+        }
+        i = n / 2;
+        return recfact(start, i) * recfact(start + i, n - i);
+    }
+
+
+
+
+
+    /*public static void findKey(String cipher) {
+        for (int i = 2; i < cipher.length() / 2; ++i) {
+            if (cipher.length() % i == 0) {
+                ArrayList<String> permutations = new ArrayList<>();
+                int cols = cipher.length() / i;
+                String firstRow = "";
+                for (int x = 0; x < i; ++x) {
+                    String part = cipher.substring(x * cols, x * cols + cols);
+                    firstRow += part.charAt(0);
+                    permutations.add(part);
+                }
+
+
+                generateHypothesis("", firstRow);
+
+                if (!foundedKey.isEmpty()) {
+                    System.out.println(foundedKey);
+                    String order = "";
+                    for (char c : foundedKey.toCharArray()) {
+                        order+=firstRow.indexOf(c)+1+" ";
+                    }
+
+                    System.out.println(order);
+
+
+                    break;
+                }
+
+
+            }
+        }
+    }
+
+
+
+     public static void generateHypothesis(String str, String target) {
+        if (str.length() == target.length()) {
+            if (newPlain.startsWith(str))
+                foundedKey = str;
+            return;
+        }
+        for (int i = 0; i < target.length(); ++i) {
+            generateHypothesis(str + target.charAt(i), target);
+        }
+    }
+
+
+
+
+
+
+    @Nullable
+    public static String findKey(String plain, String cipher) {
+        if (plain.length() / 2 >= 2) {
+
+            int tmp[][] = new int[2][2];
+            int rabcd[][] = new int[2][2];
+
+            for (int i = 0; i < 2; ++i) {
+                tmp[i][0] = alpha.indexOf(plain.charAt(2 * i));
+                tmp[i][1] = alpha.indexOf(plain.charAt(2 * i + 1));
+                rabcd[i][0] = alpha.indexOf(cipher.charAt(2 * i));
+                rabcd[i][1] = alpha.indexOf(cipher.charAt(2 * i + 1));
+            }
+            int matrixValue = matrixValue(tmp);
+            matrixValue = (matrixValue > 0) ? matrixValue : (matrixValue % alpha.length() + alpha.length()) % alpha.length();
+            int ma, mb, mc, md;
+            ma = matrixValue(new int[][]{
+                    {rabcd[0][0], tmp[0][1]},
+                    {rabcd[1][0], tmp[1][1]}
+            });
+
+            ma = (ma > 0) ? ma / matrixValue : ((ma % alpha.length() + alpha.length()) % alpha.length()) / matrixValue;
+//            ma %= alpha.length();
+
+            mb = matrixValue(new int[][]{
+                    {tmp[0][0], rabcd[0][0]},
+                    {tmp[1][0], rabcd[1][0]}
+            });
+            mb = (mb > 0) ? mb / matrixValue : ((mb % alpha.length() + alpha.length()) % alpha.length()) / matrixValue;
+//            mb %= alpha.length();
+            mc = matrixValue(new int[][]{
+                    {rabcd[0][1], tmp[0][1]},
+                    {rabcd[1][1], tmp[1][1]}
+            });
+            mc = (mc > 0) ? mc / matrixValue : ((mc % alpha.length() + alpha.length()) % alpha.length()) / matrixValue;
+//            mc %= alpha.length();
+            md = matrixValue(new int[][]{
+                    {tmp[0][0], rabcd[0][1]},
+                    {tmp[1][0], rabcd[1][1]}
+            });
+            md = (md > 0) ? md / matrixValue : ((md % alpha.length() + alpha.length()) % alpha.length()) / matrixValue;
+//            md %= alpha.length();
+
+            System.out.println(ma + " " + mb + " " + mc + " " + md);
+
+        }
+
+
+        return null;
+    }

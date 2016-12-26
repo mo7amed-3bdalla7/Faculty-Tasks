@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="600.0" style="-fx-background-color: #1269f3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TwoDimationObject">
+   <children>
+      <Pane layoutX="20.0" layoutY="14.0" prefHeight="239.0" prefWidth="574.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cccccc" height="96.0" layoutX="168.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="216.0" />
+            <JFXButton fx:id="rotate" buttonType="RAISED" layoutX="14.0" layoutY="167.0" onAction="#rotate" prefHeight="50.0" prefWidth="122.0" ripplerFill="#2298f2" style="-fx-background-color: #2196f3;" text="Rotation" />
+            <JFXButton fx:id="scale" buttonType="RAISED" layoutX="157.0" layoutY="167.0" onAction="#Scaling" prefHeight="50.0" prefWidth="133.0" ripplerFill="#2298f2" style="-fx-background-color: #2196f3;" text="Scaling" />
+            <JFXButton fx:id="translate" buttonType="RAISED" layoutX="310.0" layoutY="167.0" onAction="#translation" prefHeight="50.0" prefWidth="133.0" ripplerFill="#2298f2" style="-fx-background-color: #2196f3;" text="Translation" />
+            <JFXButton fx:id="back" buttonType="RAISED" layoutX="465.0" layoutY="167.0" onAction="#back" prefHeight="50.0" prefWidth="102.0" ripplerFill="#2298f2" style="-fx-background-color: #2196f3;" text="&lt;&lt;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
